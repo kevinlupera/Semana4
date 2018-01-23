@@ -1,0 +1,10 @@
+1. T
+2. open,mean
+3.plt.plot(openKO.index, openKO.values,'-.*r')
+4. Month
+5. F
+6 plot()
+7 matplotlib*
+8. title
+9. plot.scatter*
+10 volume, 'o'*

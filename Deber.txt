@@ -1,0 +1,47 @@
+Calcule y genere la desviación estándar de los puntajes de los usuarios de hombres y mujeres en el conjunto de datos "MovieLens 100k".
+
+Descarga del conjunto de datos: http://files.grouplens.org/datasets/movielens/ml-100k.zip
+
+Dentro de él, "u.data" representa 100k registros de puntaje. El significado de cada columna de valor es:
+
+identificación de usuario | ID del elemento | calificación | marca de tiempo
+
+"U.user" representa la información del usuario. El significado de cada columna de valor es:
+
+identificación de usuario | edad | género | ocupación | código postal
+
+El archivo "u.item" representa información relacionada con películas. El significado de cada columna de valor es:
+
+identificación de la película | título de la película | fecha de lanzamiento | fecha de lanzamiento del video | IMDb URL | desconocido | Acción | Aventura | Animación | Niños | Comedia | Crimen | Documental | Drama | Fantasía | Película-Noir | Horror | Musical Misterio | Romance | Ciencia ficción | Novela de suspense | Guerra | Western |
+
+Funciones relevantes para su posible uso:
+
+pandas.read_table (filepath_or_buffer, sep = '\ t', names = None)
+
+pandas.pivot_table (data, values ​​= None, columns = None, aggfunc = 'mean')
+
+pandas.merge (izquierda, derecha, cómo = 'interior')
+
+Para obtener documentos API más detallados, vaya a http://pandas.pydata.org/pandas-docs/stable/.
+
+[Resultado]
+
+género
+
+F *. * (Para información solamente)
+
+M *. * (Para información solamente)
+
+Nota:
+
+1. Cuanto mayor sea la diferencia, mayor será la desviación estándar.
+
+2. Calcule la calificación promedio de la revisión agrupada por cada persona primero, luego determine las desviaciones estándar por género.
+
+Coloque los dos puntajes (mantenga dos dígitos decimales) en un solo archivo txt y envíelos en línea. Por ejemplo, si las dos desviaciones estándar son,
+
+0.32 0.35
+
+luego enviar
+
+3235
